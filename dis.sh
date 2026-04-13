@@ -115,6 +115,8 @@ uninstall_discord() {
     rm -f /usr/bin/discord
     # Remove the desktop entry
     rm -f /usr/share/applications/discord.desktop
+    # Remove discord config file
+    rm -rf ~/.config/discord
     print_color "GREEN" "Discord has been uninstalled successfully!"
 }
 
